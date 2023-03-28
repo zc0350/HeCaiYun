@@ -1,7 +1,9 @@
 name: Run
 
 on:
-  workflow_dispatch:
+  #workflow_dispatch:
+  schedule:
+    - cron: 20 9 * * *
   repository_dispatch:
 
 jobs:
